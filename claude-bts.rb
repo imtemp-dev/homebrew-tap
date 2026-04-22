@@ -5,21 +5,21 @@
 class ClaudeBts < Formula
   desc "Verify before you code — catches spec errors before they become debugging sessions"
   homepage "https://github.com/imtemp-dev/claude-bts"
-  version "0.3.18"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/imtemp-dev/claude-bts/releases/download/v0.3.18/claude-bts_0.3.18_darwin_amd64.tar.gz"
-      sha256 "ce047307cf8bf05e0a6a9b2e6edf07cb9ab008f0b7939881bc1a136f32908fcc"
+      url "https://github.com/imtemp-dev/claude-bts/releases/download/v0.4.0/claude-bts_0.4.0_darwin_amd64.tar.gz"
+      sha256 "73c2ea72de5967f2257cbb149421a4fafbcb9def5527dd1724c5cde058a44726"
 
       define_method(:install) do
         bin.install "bts"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/imtemp-dev/claude-bts/releases/download/v0.3.18/claude-bts_0.3.18_darwin_arm64.tar.gz"
-      sha256 "935b48f7591d97f3aa95db8d9c448b43cfa5f8c0ca170e869c4dcf66d5fdfef4"
+      url "https://github.com/imtemp-dev/claude-bts/releases/download/v0.4.0/claude-bts_0.4.0_darwin_arm64.tar.gz"
+      sha256 "93cb2ab9b3d9125233d80ee2f853407e46fcd92bbc18bae2e2b499b1bad80414"
 
       define_method(:install) do
         bin.install "bts"
@@ -29,15 +29,15 @@ class ClaudeBts < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/imtemp-dev/claude-bts/releases/download/v0.3.18/claude-bts_0.3.18_linux_amd64.tar.gz"
-      sha256 "4e81b98355de5ef38dd9c3041bc8b8d5b566d3825b708166521884e09ed0f773"
+      url "https://github.com/imtemp-dev/claude-bts/releases/download/v0.4.0/claude-bts_0.4.0_linux_amd64.tar.gz"
+      sha256 "1f68c121758a5462b77a639456a2a63bec593179448232a00e48ac67817bd5f7"
       define_method(:install) do
         bin.install "bts"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/imtemp-dev/claude-bts/releases/download/v0.3.18/claude-bts_0.3.18_linux_arm64.tar.gz"
-      sha256 "9916e50b6e962e91edfeb38f567273dcfa7b7a4614de047372641f7758268571"
+      url "https://github.com/imtemp-dev/claude-bts/releases/download/v0.4.0/claude-bts_0.4.0_linux_arm64.tar.gz"
+      sha256 "405d29afdc43b33564aec5ffe141a7150fabfc005bae47436c4b85dc03630f08"
       define_method(:install) do
         bin.install "bts"
       end
