@@ -11,7 +11,7 @@ class ClaudeBts < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/imtemp-dev/claude-bts/releases/download/v0.7.1/claude-bts_0.7.1_darwin_amd64.tar.gz"
-      sha256 "ebb09a3bbd3fdc251d869e5a5aff4e84ff7721611d282ec7b4a73ee1c5539c6c"
+      sha256 "100a400f4da696174736fd9b8d6ac35b3da0e960aa9c5cca8fc226efc23148e2"
 
       define_method(:install) do
         bin.install "bts"
@@ -19,7 +19,7 @@ class ClaudeBts < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/imtemp-dev/claude-bts/releases/download/v0.7.1/claude-bts_0.7.1_darwin_arm64.tar.gz"
-      sha256 "07c9573b94a199c9b03e531969e9d66863d257015377d9ef1469e39b6581b94a"
+      sha256 "6af7a0eb93b21b0e77b9288e8459db87e3844fd9b9c2c520745d09b65860aef9"
 
       define_method(:install) do
         bin.install "bts"
@@ -30,14 +30,14 @@ class ClaudeBts < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/imtemp-dev/claude-bts/releases/download/v0.7.1/claude-bts_0.7.1_linux_amd64.tar.gz"
-      sha256 "c1fa894a2029c8e6c7a58077c9ee6e7b942322f451002e38dc869c49053a3cce"
+      sha256 "19491fbdc96e178d75e941201238bbb6d819b7dafa6e7a3d71901671268212e7"
       define_method(:install) do
         bin.install "bts"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/imtemp-dev/claude-bts/releases/download/v0.7.1/claude-bts_0.7.1_linux_arm64.tar.gz"
-      sha256 "764e527165334850534500cb50078abb62bed0acf7e672744ca18500e0fc8451"
+      sha256 "4a4531cfbca3229339fc8850ad403dff4ae624887ae0e601a62a9e97d4d025f5"
       define_method(:install) do
         bin.install "bts"
       end
